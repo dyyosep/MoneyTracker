@@ -1,0 +1,39 @@
+int amountAdd, amountDeduct, result;
+	String add, take, condition;
+	
+	Scanner input = new Scanner(System.in);
+	
+	System.out.println("Input the amount you want to add: ");
+	amountAdd = input.nextInt();
+	
+	System.out.println("Input the amount you want to take: ");
+	amountDeduct = input.nextInt();
+	
+	result = amountAdd - amountDeduct;
+	System.out.println("You only have "+result+" money left.");
+	System.out.println("Do you want to add or take?");
+	input.nextLine();
+	
+	condition = input.nextLine();
+	
+	if(condition == "add") {
+		System.out.println("Input the amount you want to add: ");
+	amountAdd = input.nextInt();
+	result+= amountAdd;
+	System.out.println("You now have "+result+" money left.");
+
+	
+	}
+	
+	else {
+		System.out.println("Input the amount you want to take: ");
+	amountDeduct = input.nextInt();
+	result-= amountDeduct;
+	System.out.println("You only now have "+result+" money left.");
+	}
+	
+	
+		
+	
+}
+}
